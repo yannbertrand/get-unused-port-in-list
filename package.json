@@ -18,6 +18,9 @@
     "unused",
     "list"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "Yann Bertrand <github@yann-bertrand.fr>",
   "license": "MIT",
   "dependencies": {
