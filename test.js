@@ -6,7 +6,7 @@ const getUnusedPort = require('./index');
 describe('getUnusedPort([8000, 9000])', () => {
 
   describe('no ports are busy', () => {
-    it('should return one port (no order guaranted)', () => {
+    it('should return one port (no order guaranteed)', () => {
       return getUnusedPort([8000, 9000])
         .then((unusedPort) => {
           should(unusedPort === 8000 || unusedPort === 9000).be.true;
