@@ -1,6 +1,6 @@
 {
   "name": "get-unused-port-in-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run through a list of TCP ports and return one that is not busy",
   "main": "index.js",
   "scripts": {
