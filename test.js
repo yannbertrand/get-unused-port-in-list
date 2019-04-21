@@ -58,11 +58,13 @@ describe('getUnusedPort([8000, 9000])', () => {
 
   describe('all ports are busy (8000, 9000)', () => {
 
-    let server;
+    let server8000;
+    let server9000;
     before((done) => {
-      server = http.createServer();
-      server.listen(8000, () => {
-        server.listen(9000, done);
+      server8000 = http.createServer();
+      server9000 = http.createServer();
+      server8000.listen(8000, () => {
+        server9000.listen(9000, done);
       });
     });
 
@@ -74,7 +76,9 @@ describe('getUnusedPort([8000, 9000])', () => {
     });
 
     after((done) => {
-      server.close(done);
+      server8000.close(() => {
+        server9000.close(done);
+      });
     });
 
   });

@@ -1,14 +1,14 @@
 {
   "name": "get-unused-port-in-list",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Run through a list of TCP ports and return one that is not busy",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YannBertrand/get-unused-port-in-list"
+    "url": "https://github.com/yannbertrand/get-unused-port-in-list"
   },
   "keywords": [
     "port",
@@ -21,13 +21,13 @@
   "files": [
     "index.js"
   ],
-  "author": "Yann Bertrand <github@yann-bertrand.fr>",
+  "author": "Yann Bertrand <5855339+yannbertrand@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
     "is-port-busy": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "^3.2.0",
+    "mocha": "^6.1.4",
     "should": "^11.1.1"
   }
 }
